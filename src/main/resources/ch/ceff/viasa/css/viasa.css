@@ -1,0 +1,139 @@
+/* HEADER VBOX AND CHILDS */
+
+#header-vbox .menu-bar {
+    -fx-padding: 0;
+}
+
+#header-vbox .menu-bar .menu .label {
+    -fx-text-fill: #D8E0C3;
+}
+
+#header-vbox .second-tool-bar {
+    -fx-background-color: linear-gradient(to bottom, #3B3B3B, #333333);
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #222222;
+}
+
+/* LEFT TOOL BAR */
+
+.hbox-tool:hover {
+    -fx-background-color: gray;
+    -fx-cursor: hand;
+
+}
+
+.hbox-tool:pressed {
+    -fx-background-color: #555;
+    -fx-cursor: hand;
+}
+
+.hbox-tool:selected {
+    -fx-background-color: #555;
+    /*-fx-cursor:url('../images/point.png'), auto;*/
+}
+
+
+/* SCROLLBAR */
+
+.scroll-bar .track {
+    -fx-background-color: #333;
+}
+
+.scroll-bar:horizontal > .decrement-button, .scroll-bar:horizontal > .increment-button {
+    -fx-background-color: #333;
+    -fx-background-insets: 0;
+    -fx-padding: 0.25em 0 0.25em 0;
+}
+
+.scroll-bar:vertical > .decrement-button, .scroll-bar:vertical > .increment-button {
+    -fx-background-color: #333;
+    -fx-background-insets: 0;
+    -fx-padding: 0 0.25em 0 0.25em;
+}
+
+.scroll-bar > .decrement-button > .decrement-arrow, .scroll-bar > .increment-button > .increment-arrow {
+    -fx-background-color: #333;
+    -fx-effect: null;
+}
+
+/* TABPANE */
+
+.tab-pane .tab-header-area {
+    -fx-padding: 0;
+}
+
+.tab-pane > .tab-header-area > .tab-header-background {
+    -fx-background-color: #404040;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab {
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: linear-gradient(to left, #565656, #444);
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab > .tab-container > .tab-label {
+    -fx-text-fill: #D8E0C3;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:selected {
+    -fx-background-color: gray;
+}
+
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-width: 0;
+}
+
+
+/* TREEVIEW AND TREECELL */
+
+.tree-view {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+}
+
+.tree-view .corner {
+    -fx-background-color: #333;
+}
+
+
+.tree-cell .label {
+    -fx-padding: 0;
+}
+
+.tree-cell {
+    -fx-background: #333;
+    -fx-border-insets: 0px;
+    -fx-border-color: red;
+    -fx-border-width: 0;
+    -fx-start-margin: 0px;
+    -fx-background-insets: 0px;
+    -fx-padding: 0px;
+    -fx-indent: 2em;
+}
+
+/* Selected when control is not focused */
+.tree-cell:filled:selected {
+    -fx-background-insets: 0px;
+    -fx-background-color: gray;
+    -fx-table-cell-border-color: derive(-fx-selection-bar-non-focused, 20%);
+}
+
+/* splitPane */
+
+.split-pane {
+    -fx-padding: 0;
+}
+
+.split-pane > .split-pane-divider {
+    -fx-padding: 1px;
+    -fx-background-color: #222;
+}
+
+
+/* POUR LES MINIMAPS */
+
+.scroll-pane{
+    -fx-background-color: transparent;
+}

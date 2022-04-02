@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="root_StackPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="784.0" minWidth="890.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox fx:id="minimaps_Vbox" alignment="TOP_CENTER" maxHeight="200.0" maxWidth="400.0" minHeight="30.0" minWidth="400.0" style="-fx-background-color: #333;" StackPane.alignment="TOP_LEFT">
+            <children>
+                <HBox alignment="CENTER_LEFT" maxHeight="30.0" minHeight="30.0">
+                    <children>
+                        <CheckBox fx:id="hiddenMinimaps_CheckBox" mnemonicParsing="false" text="Cacher les minicartes" textFill="#eeeaea"/>
+                    </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+                </HBox>
+                <ScrollPane fx:id="minimaps_ScrollPane" maxHeight="165.0" minHeight="165.0" prefHeight="165.0" vbarPolicy="NEVER">
+               <content>
+                  <HBox prefWidth="800.0" spacing="5.0">
+                     <children>
+                        <VBox alignment="CENTER" maxHeight="150.0" maxWidth="150.0" minHeight="150.0" minWidth="150.0" prefHeight="150.0" prefWidth="150.0">
+                           <children>
+                              <ImageView fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label maxHeight="20.0" minHeight="20.0" prefHeight="20.0" text="SATELLITE" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" maxHeight="150.0" maxWidth="150.0" minHeight="150.0" minWidth="150.0" prefHeight="150.0" prefWidth="150.0">
+                           <children>
+                              <ImageView fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label maxHeight="20.0" minHeight="20.0" prefHeight="20.0" text="SATELLITE AVEC NOMS" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" maxHeight="150.0" maxWidth="150.0" minHeight="150.0" minWidth="150.0" prefHeight="150.0" prefWidth="150.0">
+                           <children>
+                              <ImageView fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label maxHeight="20.0" minHeight="20.0" prefHeight="20.0" text="STREETMAP" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" maxHeight="150.0" maxWidth="150.0" minHeight="150.0" minWidth="150.0" prefHeight="150.0" prefWidth="150.0">
+                           <children>
+                              <ImageView fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label maxHeight="20.0" minHeight="20.0" prefHeight="20.0" text="TERRAIN WITH LABEL" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </content>
+                </ScrollPane>
+            </children>
+            <StackPane.margin>
+                <Insets left="5.0" top="5.0" />
+            </StackPane.margin>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+        </VBox>
+    </children>
+</StackPane>
